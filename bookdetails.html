@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <script src="./components/main.js" type="text/javascript" defer></script>
+    <link rel="stylesheet" href="./assets/css/styles.css" />
+
+    <script
+      src="https://kit.fontawesome.com/1652b9392a.js"
+      crossorigin="anonymous"
+    ></script>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@300&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@800&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <header-component></header-component>
+    <main class="container">
+      <!-- search -->
+      <div class="booklisting_search_container">
+        <!--   https://www.geeksforgeeks.org/how-to-place-font-awesome-icon-to-input-field/?ref=lbp         -->
+
+        <input
+          class="booklisting_search_input"
+          type="text"
+          placeholder="Search Books Here..."
+        />
+        <div class="booklisting_search_keywords_overlay">
+          <i class="fa fa-search icon"></i>
+          <span class="booklisting_search_keywords">
+            <a href="./filter.html" target="_blank"> Keywords </a>
+          </span>
+        </div>
+      </div>
+
+      <!-- main section-->
+      <div class="announcement_title">Book Description</div>
+
+      <div class="book_description_container_grid">
+        <div class="book_description_menu_options">
+          <a href="#">
+            <i class="fa-solid fa-folder"></i>
+            Record
+          </a>
+          <a href="#">
+            <!-- can't use it's a pro icon 
+                      <i class="fa-regular fa-signal-stream"></i> -->
+            <i class="fa-solid fa-globe"></i>
+            Online Access</a
+          >
+          <a href="#">
+            <i class="fa-regular fa-copy"></i>
+            Find a Copy
+          </a>
+          <a href="./account.html">
+            <i class="fa-solid fa-circle-user"></i>
+            Account
+          </a>
+          <a href="#">
+            <i class="fa-solid fa-clipboard-check"></i>
+            Books Read</a
+          >
+        </div>
+
+        <div class="book_description_details_container">
+          <div class="book_description_details_header">
+            Guinness world records. Man-Made marvels! [eBook}/ Donald Lemke
+          </div>
+          <div class="book_description_details_rows">
+            <h1>Language:</h1>
+            <h2>English</h2>
+          </div>
+          <div class="book_description_details_book_image">
+            <img src="./assets/img/BookListing-guiness.png" />
+            <div class="book_description_details_rows">
+              <h1>Authors:</h1>
+              <h2>Lemke, Donald., author</h2>
+            </div>
+
+            <div class="book_description_details_rows">
+              <h1>Publication Information:</h1>
+              <h2>Crazy Town, IL : CTL, Publishers of This Book 2005.</h2>
+            </div>
+
+            <div class="book_description_details_rows">
+              <h1>Edition:</h1>
+              <h2>First Edition.</h2>
+            </div>
+
+            <div class="book_description_details_rows">
+              <h1>Publication:</h1>
+              <h2>2016</h2>
+            </div>
+
+            <div class="book_description_details_rows">
+              <h1>Type:</h1>
+              <h2>Book; eBook</h2>
+            </div>
+
+            <div class="book_description_details_rows">
+              <h1>Age:</h1>
+              <h2>8-12</h2>
+            </div>
+
+            <div class="review_checkout_button_container">
+              <button
+                class="button_basics red_button register_button booklisting_button"
+              >
+                checkout
+              </button>
+            </div>
+
+            <hr />
+            <div class="book_description_details_rows">
+              <h1>Reviews:</h1>
+            </div>
+            <div>
+              <!-- reviewer -->
+              <div class="staff_defaults reviewer_container">
+                <div class="reviewer_left_section">
+                  <img src="./assets/img/bookdetails-reviewer.png" />
+                </div>
+
+                <div class="staff_right_section">
+                  <div class="staff_defaults reviewer_name">John Doe</div>
+                  <div class="staff_defaults reviewer_review">
+                    Lorem ipsum dolor sit amet consectetur. In luctus porttitor
+                    tristique quam orci amet habitant mauris turpis. Non aliquam
+                    quam elementum tortor.
+                  </div>
+                  <div class="reviewer_stars">
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa fa-star-half-o"></i>
+                  </div>
+                </div>
+              </div>
+
+              <a href="#" class="review_previous">
+                <i class="fa-solid fa-caret-left"></i>
+              </a>
+              <a href="#" class="review_next">
+                <i class="fa-solid fa-caret-right"></i>
+              </a>
+              <div class="grid_staff_more">
+                <a href="#" class="grid_staff_bullet review_bullet">
+                  <i class="fa-solid fa-circle"></i
+                ></a>
+                <a href="#" class="grid_staff_bullet">
+                  <i class="fa-solid fa-circle"></i
+                ></a>
+                <a href="#" class="grid_staff_bullet">
+                  <i class="fa-solid fa-circle"></i
+                ></a>
+                <a href="#" class="grid_staff_bullet">
+                  <i class="fa-solid fa-circle"></i
+                ></a>
+                <a href="#" class="grid_staff_bullet">
+                  <i class="fa-solid fa-circle"></i
+                ></a>
+              </div>
+            </div>
+            <div class="book_description_details_back">
+              <a href="books.html">Back...</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+    <footer-component></footer-component>
+  </body>
+</html>

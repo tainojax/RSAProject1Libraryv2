@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./assets/css/styles.css" />
+
+    <script
+      src="https://kit.fontawesome.com/1652b9392a.js"
+      crossorigin="anonymous"
+    ></script>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@300&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@800&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700&display=swap"
+      rel="stylesheet"
+    />
+    <title>Crazy Town Library (CTL)</title>
+  </head>
+  <body>
+    <div class="container">
+      <!-- main header and menu -->
+      <div class="navbar">
+        <div class="navbar_logo">
+          <img
+            src="./assets/img/CTL_LOGO_UPDATED.png"
+            alt="Crazy Town Library Logo"
+          />
+        </div>
+        <div class="navbar_menu">
+          <a href="./index.html">HOME</a>
+          <a href="#">SIGN IN</a>
+
+          <button class="button_basics register_button red_button">
+            <a href="./registration.html"> REGISTER</a>
+          </button>
+
+          <div class="search-container">
+            <!--   https://www.geeksforgeeks.org/how-to-place-font-awesome-icon-to-input-field/?ref=lbp         -->
+            <i class="fa fa-search icon"></i>
+            <input class="input-field" type="text" />
+          </div>
+        </div>
+      </div>
+
+      <!-- secondary menu -->
+      <div class="navbar_secondary">
+        <div class="navbar_secondary_menu">
+          <a href="./about.html">ABOUT</a>
+          <a href="./account.html">ACCOUNT</a>
+          <!-- https://fontawesome.com/icons/caret-down?s=solid&f=classic -->
+          <a href="./location.html">
+            LOCATION
+            <i class="fa-solid fa-caret-down"></i>
+          </a>
+
+          <a href="./events.html"
+            >EVENTS
+            <i class="fa-solid fa-caret-down"></i>
+          </a>
+        </div>
+      </div>
+
+      <!-- main section-->
+
+      <!-- main image overlay-->
+      <div class="register_banner_image">
+        <img src="./assets/img/registration-main.png" alt="" />
+
+        <div class="register_banner_image_overlay">
+          <img src="./assets/img/CTL_LOGO_UPDATED 1.png" />
+          <div class="register_banner_image_overlay_text1">
+            Explore today, discover tomorrow.
+          </div>
+          <div class="register_banner_image_overlay_text2">REGISTER TODAY</div>
+        </div>
+      </div>
+      <div class="register_login">
+        <p>Already have an account? <a href="#./Login.html">Login</a>.</p>
+      </div>
+      <!-- form -->
+      <div class="register_form">
+        <form>
+          <h2>Your Information</h2>
+          <div class="register_form_grid">
+            <div class="register_form_column1">
+              <label for="first-name">First Name:</label>
+              <input type="text" id="first-name" name="first-name" />
+
+              <label for="email">Email:</label>
+              <input type="email" id="email" name="email" />
+
+              <label for="age">Age:</label>
+              <input type="number" id="age" name="age" />
+
+              <label for="parent-guardian">Parent/Guardian:</label>
+              <input type="text" id="parent-guardian" name="parent-guardian" />
+            </div>
+
+            <div class="register_form_column2">
+              <label for="last-name">Last Name:</label>
+              <input type="text" id="last-name" name="last-name" />
+
+              <label for="phone-number">Phone Number:</label>
+              <input type="tel" id="phone-number" name="phone-number" />
+
+              <label for="student">Student:</label>
+              <input type="text" id="student" name="student" />
+            </div>
+          </div>
+          <h2>Address</h2>
+          <div class="register_form_grid">
+            <div class="register_form_column1">
+              <label for="Address">Address:</label>
+              <input type="text" id="address" name="address" />
+            </div>
+            <div class="register_form_column2">
+              <label for="city-state-zip">City, State, Zip:</label>
+              <input type="text" id="city-state-zip" name="city-state-zip" />
+            </div>
+          </div>
+
+          <h2>Choose Your Password</h2>
+          <div class="register_form_grid">
+            <div class="register_form_column1">
+              <label for="password">Password:</label>
+              <input type="password" id="password" name="password" />
+              Password Strength:
+            </div>
+            <div class="register_form_column2">
+              <label for="confirm-password">Confirm Password:</label>
+              <input
+                type="password"
+                id="confirm-password"
+                name="confirm-password"
+              />
+            </div>
+          </div>
+          <p>
+            8 Characters minimum <br />
+            Must contain one special character <br />
+            One Uppercase Letter
+          </p>
+          <hr />
+          <div class="register_form_checkbox">
+            <input
+              type="checkbox"
+              name="terms-and-conditions"
+              id="terms-and-conditions"
+            />
+            I confirm that I have read and agree to the
+            <a href="./termsofservice.html"> terms of service </a>.
+            <button class="button_basics red_button form_register_button">
+              Register
+            </button>
+          </div>
+        </form>
+      </div>
+
+      <!-- footer section-->
+      <div class="nav_footer">
+        COPYRIGHT © 2023 CRAZY TOWN LIBRARY. ALL RIGHTS RESERVED
+      </div>
+
+      <!-- END OF CONTAINER -->
+    </div>
+  </body>
+</html>

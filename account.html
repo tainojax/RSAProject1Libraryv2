@@ -1,0 +1,307 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <script src="./components/main.js" type="text/javascript" defer></script>
+    <link rel="stylesheet" href="./assets/css/styles.css" />
+
+    <script
+      src="https://kit.fontawesome.com/1652b9392a.js"
+      crossorigin="anonymous"
+    ></script>
+
+    <script type="text/javascript">
+      function enableTextBoxes() {
+        document.getElementById("first-name").readOnly = false;
+        document.getElementById("last-name").readOnly = false;
+        document.getElementById("email").readOnly = false;
+        document.getElementById("age").readOnly = false;
+        document.getElementById("parent-guardian").readOnly = false;
+        document.getElementById("phone-number").readOnly = false;
+        document.getElementById("student").readOnly = false;
+        document.getElementById("library-card-number").readOnly = false;
+        document.getElementById("address").readOnly = false;
+        document.getElementById("city-state-zip").readOnly = false;
+        document.getElementById("old-password").readOnly = false;
+        document.getElementById("new-password").readOnly = false;
+        document.getElementById("confirm-new-password").readOnly = false;
+        document.getElementById("terms-and-conditions").disabled = false;
+      }
+    </script>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@300&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@800&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <header-component></header-component>
+    <main class="container">
+      <!-- main image overlay-->
+      <div class="register_banner_image">
+        <img src="./assets/img/registration-main.png" alt="" />
+
+        <div class="register_banner_image_overlay">
+          <img src="./assets/img/CTL_LOGO_UPDATED 1.png" />
+          <div class="register_banner_image_overlay_text1">
+            Go anywhere. Learn anything.
+          </div>
+          <div class="register_banner_image_overlay_text2">Read every day.</div>
+        </div>
+      </div>
+
+      <!-- form -->
+      <div class="register_form">
+        <form>
+          <h2>Your Information</h2>
+          <div class="account_edit">
+            <a href="#" onclick="enableTextBoxes()"
+              >edit <i class="fa-solid fa-user-gear"></i>
+            </a>
+          </div>
+
+          <div class="register_form_grid">
+            <div class="register_form_column1">
+              <label for="first-name">First Name:</label>
+              <input
+                type="text"
+                id="first-name"
+                name="first-name"
+                readonly
+                value="JOHN"
+              />
+
+              <label for="email">Email:</label>
+              <input
+                type="email"
+                id="email"
+                name="email"
+                readonly
+                value="jdoe@example.com"
+              />
+
+              <label for="age">Age:</label>
+              <input type="number" id="age" name="age" readonly value="23" />
+
+              <label for="parent-guardian">Parent/Guardian:</label>
+              <input
+                type="text"
+                id="parent-guardian"
+                name="parent-guardian"
+                readonly
+              />
+            </div>
+
+            <div class="register_form_column2">
+              <label for="last-name">Last Name:</label>
+              <input
+                type="text"
+                id="last-name"
+                name="last-name"
+                readonly
+                value="Doe"
+              />
+
+              <label for="phone-number">Phone Number:</label>
+              <input
+                type="tel"
+                id="phone-number"
+                name="phone-number"
+                readonly
+                value="315-555-5555"
+              />
+
+              <label for="student">Student:</label>
+              <input
+                type="text"
+                id="student"
+                name="student"
+                readonly
+                value="No"
+              />
+
+              <label for="library-card-number">LIBRARY CARD NUMBER:</label>
+              <input
+                type="text"
+                id="library-card-number"
+                name="library-card-number"
+                readonly
+                value="jd-4453d-edb-609opp-lloed"
+              />
+            </div>
+          </div>
+          <h2>Address</h2>
+          <div class="register_form_grid">
+            <div class="register_form_column1">
+              <label for="Address">Address:</label>
+              <input
+                type="text"
+                id="address"
+                name="address"
+                readonly
+                value="123 NEWMAN LANE"
+              />
+            </div>
+            <div class="register_form_column2">
+              <label for="city-state-zip">City, State, Zip:</label>
+              <input
+                type="text"
+                id="city-state-zip"
+                name="city-state-zip"
+                readonly
+                value="CRAZY TOWN, OO, 55889-8910"
+              />
+            </div>
+          </div>
+
+          <h2>Choose Your Password</h2>
+          <div class="register_form_grid">
+            <div class="register_form_column1">
+              <label for="old-password">Old Password:</label>
+              <input
+                type="password"
+                id="old-password"
+                name="old-password"
+                readonly
+              />
+              <div class="password-show">show</div>
+
+              <label for="new-password">New Password:</label>
+              <input
+                type="password"
+                id="new-password"
+                name="new-password"
+                readonly
+              />
+              <div class="password-show">show</div>
+
+              <label for="confirm-new-password">Confirm New Password:</label>
+              <input
+                type="password"
+                id="confirm-new-password"
+                name="confirm-new-password"
+                readonly
+              />
+              <div class="password-show">show</div>
+            </div>
+
+            <div class="register_form_column2">
+              <div class="password-criteria">
+                <p>Password Strength:</p>
+                <p>Must Contain</p>
+                <p>
+                  8 Characters minimum <br />
+                  Must contain one special character <br />
+                  One Uppercase Letter
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <hr />
+          <div class="register_form_checkbox">
+            <input
+              type="checkbox"
+              name="terms-and-conditions"
+              id="terms-and-conditions"
+              disabled
+            />
+            I confirm that I have read and agree to the
+            <a href="./termsofservice.html"> terms of service </a>.
+            <button class="button_basics red_button form_register_button">
+              Save
+            </button>
+          </div>
+        </form>
+      </div>
+
+      <!-- Checkout History -->
+      <div class="main_title">checkout history</div>
+      <div class="account_book_information_container">
+        <img src="./assets/img/BookListing-harryPoter.png" alt="" />
+        <div class="account_book_information_detail">
+          <h1>Title:</h1>
+          <h2>Harry Potter and The Cursed Child (parts one and two)</h2>
+        </div>
+        <div class="account_book_information_detail">
+          <h1>authors:</h1>
+          <h2>John Tiffany & Jack Thorne</h2>
+        </div>
+        <div class="account_book_information_detail">
+          <h1>reviews:</h1>
+          <h2>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+          </h2>
+        </div>
+        <div class="account_book_information_detail">
+          <h1>ratings:</h1>
+          <h2>9.5</h2>
+        </div>
+      </div>
+      <hr class="account_hr" />
+
+      <!-- Favorite Books -->
+      <div class="main_title">favorite books</div>
+      <div class="account_book_information_container">
+        <img src="./assets/img/BookListing-harryPoter.png" alt="" />
+        <div class="account_book_information_detail">
+          <h1>Title:</h1>
+          <h2>Harry Potter and The Cursed Child (parts one and two)</h2>
+        </div>
+        <div class="account_book_information_detail">
+          <h1>authors:</h1>
+          <h2>John Tiffany & Jack Thorne</h2>
+        </div>
+        <div class="account_book_information_detail">
+          <h1>reviews:</h1>
+          <h2>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+          </h2>
+        </div>
+        <div class="account_book_information_detail">
+          <h1>ratings:</h1>
+          <h2>9.5</h2>
+        </div>
+      </div>
+    </main>
+    <footer-component></footer-component>
+  </body>
+</html>

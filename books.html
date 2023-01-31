@@ -1,0 +1,406 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./assets/css/styles.css" />
+
+    <script
+      src="https://kit.fontawesome.com/1652b9392a.js"
+      crossorigin="anonymous"
+    ></script>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@300&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@800&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700&display=swap"
+      rel="stylesheet"
+    />
+    <title>Crazy Town Library (CTL)</title>
+  </head>
+  <body>
+    <div class="container">
+      <!-- main header and menu -->
+      <div class="navbar">
+        <div class="navbar_logo">
+          <img
+            src="./assets/img/CTL_LOGO_UPDATED.png"
+            alt="Crazy Town Library Logo"
+          />
+        </div>
+        <div class="navbar_menu">
+          <a href="./index.html">HOME</a>
+          <a href="#">SIGN IN</a>
+          <button class="button_basics register_button red_button">
+            <a href="./registration.html"> REGISTER</a>
+          </button>
+          <div class="search-container">
+            <!--   https://www.geeksforgeeks.org/how-to-place-font-awesome-icon-to-input-field/?ref=lbp         -->
+            <i class="fa fa-search icon"></i>
+            <input class="input-field" type="text" />
+          </div>
+        </div>
+      </div>
+
+      <!-- secondary menu -->
+      <div class="navbar_secondary">
+        <div class="navbar_secondary_menu">
+          <a href="./about.html">ABOUT</a>
+          <a href="./account.html">ACCOUNT</a>
+          <!-- https://fontawesome.com/icons/caret-down?s=solid&f=classic -->
+          <a href="./location.html">
+            LOCATION
+            <i class="fa-solid fa-caret-down"></i>
+          </a>
+
+          <a href="./events.html"
+            >EVENTS
+            <i class="fa-solid fa-caret-down"></i>
+          </a>
+        </div>
+      </div>
+
+      <!-- search -->
+      <div class="booklisting_search_container">
+        <!--   https://www.geeksforgeeks.org/how-to-place-font-awesome-icon-to-input-field/?ref=lbp         -->
+
+        <input
+          class="booklisting_search_input"
+          type="text"
+          placeholder="UI/UX Design"
+        />
+        <div class="booklisting_search_keywords_overlay">
+          <i class="fa fa-search icon"></i>
+          <span class="booklisting_search_keywords">
+            <a href="./filter.html" target="_blank"> Keywords </a>
+          </span>
+        </div>
+      </div>
+
+      <!-- main section-->
+
+      <div class="main_title">available books</div>
+      <div class="account_edit books_listing_count">1 of 1000</div>
+
+      <div class="booklisting_information_container">
+        <img src="./assets/img/BookListing-dontMakeMeTthink.png" alt="" />
+        <div class="booklisting_information_detail">
+          <h1>Title:</h1>
+          <h2>Lorem ipsum dolor sit amet consectetur.</h2>
+        </div>
+        <div class="booklisting_information_detail">
+          <h1>authors:</h1>
+          <h2>Lorem ipsum</h2>
+        </div>
+        <div class="booklisting_information_detail">
+          <h1>available:</h1>
+          <h2 class="align-right">QTY: 7</h2>
+        </div>
+        <div class="booklisting_information_detail">
+          <h1>ratings:</h1>
+          <h2 class="align-right">4.8 <i class="fa-solid fa-star"></i></h2>
+        </div>
+        <div class="account_book_information_detail">
+          <button
+            class="button_basics red_button register_button booklisting_button"
+          >
+            checkout
+          </button>
+        </div>
+      </div>
+
+      <div class="booklisting_information_container">
+        <img src="./assets/img/BookListing-dontMakeMeTthink.png" alt="" />
+        <div class="booklisting_information_detail">
+          <h1>Title:</h1>
+          <h2>Lorem ipsum dolor sit amet consectetur.</h2>
+        </div>
+        <div class="booklisting_information_detail">
+          <h1>authors:</h1>
+          <h2>Lorem ipsum</h2>
+        </div>
+        <div class="booklisting_information_detail">
+          <h1>available:</h1>
+          <h2 class="align-right">QTY: 7</h2>
+        </div>
+        <div class="booklisting_information_detail">
+          <h1>ratings:</h1>
+          <h2 class="align-right">4.8 <i class="fa-solid fa-star"></i></h2>
+        </div>
+        <div class="account_book_information_detail">
+          <button
+            class="button_basics red_button register_button booklisting_button"
+          >
+            checkout
+          </button>
+        </div>
+      </div>
+
+      <div class="booklisting_information_container">
+        <img src="./assets/img/BookListing-dontMakeMeTthink.png" alt="" />
+        <div class="booklisting_information_detail">
+          <h1>Title:</h1>
+          <h2>Lorem ipsum dolor sit amet consectetur.</h2>
+        </div>
+        <div class="booklisting_information_detail">
+          <h1>authors:</h1>
+          <h2>Lorem ipsum</h2>
+        </div>
+        <div class="booklisting_information_detail">
+          <h1>available:</h1>
+          <h2 class="align-right">QTY: 7</h2>
+        </div>
+        <div class="booklisting_information_detail">
+          <h1>ratings:</h1>
+          <h2 class="align-right">4.8 <i class="fa-solid fa-star"></i></h2>
+        </div>
+        <div class="account_book_information_detail">
+          <button
+            class="button_basics red_button register_button booklisting_button"
+          >
+            checkout
+          </button>
+        </div>
+      </div>
+
+      <div class="booklisting_information_container">
+        <img src="./assets/img/BookListing-dontMakeMeTthink.png" alt="" />
+        <div class="booklisting_information_detail">
+          <h1>Title:</h1>
+          <h2>Lorem ipsum dolor sit amet consectetur.</h2>
+        </div>
+        <div class="booklisting_information_detail">
+          <h1>authors:</h1>
+          <h2>Lorem ipsum</h2>
+        </div>
+        <div class="booklisting_information_detail">
+          <h1>available:</h1>
+          <h2 class="align-right">QTY: 7</h2>
+        </div>
+        <div class="booklisting_information_detail">
+          <h1>ratings:</h1>
+          <h2 class="align-right">4.8 <i class="fa-solid fa-star"></i></h2>
+        </div>
+        <div class="account_book_information_detail">
+          <button
+            class="button_basics red_button register_button booklisting_button"
+          >
+            checkout
+          </button>
+        </div>
+      </div>
+
+      <div class="booklisting_information_container">
+        <img src="./assets/img/BookListing-dontMakeMeTthink.png" alt="" />
+        <div class="booklisting_information_detail">
+          <h1>Title:</h1>
+          <h2>Lorem ipsum dolor sit amet consectetur.</h2>
+        </div>
+        <div class="booklisting_information_detail">
+          <h1>authors:</h1>
+          <h2>Lorem ipsum</h2>
+        </div>
+        <div class="booklisting_information_detail">
+          <h1>available:</h1>
+          <h2 class="align-right">QTY: 7</h2>
+        </div>
+        <div class="booklisting_information_detail">
+          <h1>ratings:</h1>
+          <h2 class="align-right">4.8 <i class="fa-solid fa-star"></i></h2>
+        </div>
+        <div class="account_book_information_detail">
+          <button
+            class="button_basics red_button register_button booklisting_button"
+          >
+            checkout
+          </button>
+        </div>
+      </div>
+
+      <div class="booklisting_information_container">
+        <img src="./assets/img/BookListing-dontMakeMeTthink.png" alt="" />
+        <div class="booklisting_information_detail">
+          <h1>Title:</h1>
+          <h2>Lorem ipsum dolor sit amet consectetur.</h2>
+        </div>
+        <div class="booklisting_information_detail">
+          <h1>authors:</h1>
+          <h2>Lorem ipsum</h2>
+        </div>
+        <div class="booklisting_information_detail">
+          <h1>available:</h1>
+          <h2 class="align-right">QTY: 7</h2>
+        </div>
+        <div class="booklisting_information_detail">
+          <h1>ratings:</h1>
+          <h2 class="align-right">4.8 <i class="fa-solid fa-star"></i></h2>
+        </div>
+        <div class="account_book_information_detail">
+          <button
+            class="button_basics red_button register_button booklisting_button"
+          >
+            checkout
+          </button>
+        </div>
+      </div>
+
+      <div class="booklisting_information_container">
+        <img src="./assets/img/BookListing-dontMakeMeTthink.png" alt="" />
+        <div class="booklisting_information_detail">
+          <h1>Title:</h1>
+          <h2>Lorem ipsum dolor sit amet consectetur.</h2>
+        </div>
+        <div class="booklisting_information_detail">
+          <h1>authors:</h1>
+          <h2>Lorem ipsum</h2>
+        </div>
+        <div class="booklisting_information_detail">
+          <h1>available:</h1>
+          <h2 class="align-right">QTY: 7</h2>
+        </div>
+        <div class="booklisting_information_detail">
+          <h1>ratings:</h1>
+          <h2 class="align-right">4.8 <i class="fa-solid fa-star"></i></h2>
+        </div>
+        <div class="account_book_information_detail">
+          <button
+            class="button_basics red_button register_button booklisting_button"
+          >
+            checkout
+          </button>
+        </div>
+      </div>
+
+      <div class="booklisting_information_container">
+        <img src="./assets/img/BookListing-dontMakeMeTthink.png" alt="" />
+        <div class="booklisting_information_detail">
+          <h1>Title:</h1>
+          <h2>Lorem ipsum dolor sit amet consectetur.</h2>
+        </div>
+        <div class="booklisting_information_detail">
+          <h1>authors:</h1>
+          <h2>Lorem ipsum</h2>
+        </div>
+        <div class="booklisting_information_detail">
+          <h1>available:</h1>
+          <h2 class="align-right">QTY: 7</h2>
+        </div>
+        <div class="booklisting_information_detail">
+          <h1>ratings:</h1>
+          <h2 class="align-right">4.8 <i class="fa-solid fa-star"></i></h2>
+        </div>
+        <div class="account_book_information_detail">
+          <button
+            class="button_basics red_button register_button booklisting_button"
+          >
+            checkout
+          </button>
+        </div>
+      </div>
+
+      <div class="booklisting_information_container">
+        <img src="./assets/img/BookListing-dontMakeMeTthink.png" alt="" />
+        <div class="booklisting_information_detail">
+          <h1>Title:</h1>
+          <h2>Lorem ipsum dolor sit amet consectetur.</h2>
+        </div>
+        <div class="booklisting_information_detail">
+          <h1>authors:</h1>
+          <h2>Lorem ipsum</h2>
+        </div>
+        <div class="booklisting_information_detail">
+          <h1>available:</h1>
+          <h2 class="align-right">QTY: 7</h2>
+        </div>
+        <div class="booklisting_information_detail">
+          <h1>ratings:</h1>
+          <h2 class="align-right">4.8 <i class="fa-solid fa-star"></i></h2>
+        </div>
+        <div class="account_book_information_detail">
+          <button
+            class="button_basics red_button register_button booklisting_button"
+          >
+            checkout
+          </button>
+        </div>
+      </div>
+
+      <div class="booklisting_information_container">
+        <img src="./assets/img/BookListing-dontMakeMeTthink.png" alt="" />
+        <div class="booklisting_information_detail">
+          <h1>Title:</h1>
+          <h2>Lorem ipsum dolor sit amet consectetur.</h2>
+        </div>
+        <div class="booklisting_information_detail">
+          <h1>authors:</h1>
+          <h2>Lorem ipsum</h2>
+        </div>
+        <div class="booklisting_information_detail">
+          <h1>available:</h1>
+          <h2 class="align-right">QTY: 7</h2>
+        </div>
+        <div class="booklisting_information_detail">
+          <h1>ratings:</h1>
+          <h2 class="align-right">4.8 <i class="fa-solid fa-star"></i></h2>
+        </div>
+        <div class="account_book_information_detail">
+          <button
+            class="button_basics red_button register_button booklisting_button"
+          >
+            checkout
+          </button>
+        </div>
+      </div>
+      <div class="booklisting_information_navigation">
+        <div class="booklisting_information_navigation_nextprevious">
+          <a href="#"><i class="fa-solid fa-angle-left"></i></a>
+        </div>
+        <div class="booklisting_information_navigation_pages">
+          <a href="#">1</a>
+          <a href="#">2</a>
+          <a href="#">3</a>
+          <a href="#">4</a>
+          <a href="#">5</a>
+        </div>
+        <div class="booklisting_information_navigation_nextprevious">
+          <a href="#"><i class="fa-solid fa-angle-right"></i></a>
+        </div>
+      </div>
+      <!-- footer section-->
+      <div class="nav_footer">
+        COPYRIGHT © 2023 CRAZY TOWN LIBRARY. ALL RIGHTS RESERVED
+      </div>
+
+      <!-- END OF CONTAINER -->
+    </div>
+  </body>
+</html>

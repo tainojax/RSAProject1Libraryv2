@@ -1,0 +1,351 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <script src="./components/main.js" type="text/javascript" defer></script>
+    <link rel="stylesheet" href="./assets/css/styles.css" />
+
+    <script
+      src="https://kit.fontawesome.com/1652b9392a.js"
+      crossorigin="anonymous"
+    ></script>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@300&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@800&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <header-component></header-component>
+    <main class="container">
+      <!-- search -->
+      <div class="booklisting_search_container">
+        <!--   https://www.geeksforgeeks.org/how-to-place-font-awesome-icon-to-input-field/?ref=lbp         -->
+
+        <input
+          class="booklisting_search_input"
+          type="text"
+          placeholder="Search Books Here..."
+        />
+        <div class="booklisting_search_keywords_overlay">
+          <i class="fa fa-search icon"></i>
+          <span class="booklisting_search_keywords">
+            <a href="./filter.html" target="_blank"> Keywords </a>
+          </span>
+        </div>
+      </div>
+
+      <!-- Books -->
+      <div class="announcement_title">CHILDREN FAVORITES</div>
+      <div class="announcement_container_grid">
+        <div class="announcement_container_grid_item0">View all...</div>
+        <div class="announcement_container_grid_item2">
+          <div class="announcement_container">
+            <div class="announcement_container_item">
+              <a href="#">
+                <img
+                  src="./assets/img/BookListing-LittleBlackGirl.png"
+                  alt="cover to the book little black girl"
+                />
+              </a>
+              <button class="announcement_container_item_reserve">
+                Reserve Book
+              </button>
+              <p>
+                Qty: 7
+                <button
+                  class="announcement_container_item_available announcement_container_item_available_yes"
+                >
+                  Available
+                </button>
+              </p>
+            </div>
+
+            <div class="announcement_container_item">
+              <a href="#">
+                <img
+                  src="./assets/img/BookListing-theKinestRed.png"
+                  alt="cover to the book the kindest red"
+                />
+              </a>
+              <button class="announcement_container_item_reserve">
+                Reserve Book
+              </button>
+              <p>
+                Qty: 7
+                <button
+                  class="announcement_container_item_available announcement_container_item_available_yes"
+                >
+                  Available
+                </button>
+              </p>
+            </div>
+
+            <div class="announcement_container_item">
+              <a href="#">
+                <img
+                  src="./assets/img/BookListing-BigNate.png"
+                  alt="cover to the book Big Nate and His Friends"
+                />
+              </a>
+              <button class="announcement_container_item_reserve">
+                Reserve Book
+              </button>
+              <p>
+                Qty: 7
+                <button
+                  class="announcement_container_item_available announcement_container_item_available_yes"
+                >
+                  Available
+                </button>
+              </p>
+            </div>
+
+            <div class="announcement_container_item">
+              <a href="#">
+                <img
+                  src="./assets/img/BookListing-CharlottesWeb.png"
+                  alt="cover to the book Charlotte's Web"
+                />
+              </a>
+              <button class="announcement_container_item_reserve">
+                Reserve Book
+              </button>
+              <p>
+                Qty: 7
+                <button
+                  class="announcement_container_item_available announcement_container_item_available_yes"
+                >
+                  Available
+                </button>
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="announcement_container_grid_item3">
+          <a href="#"><i class="fa-solid fa-caret-right"></i></a>
+        </div>
+
+        <div class="announcement_container_grid_item1">
+          <a href="#"><i class="fa-solid fa-caret-left"></i></a>
+        </div>
+      </div>
+      <hr class="announcement_container_hr" />
+
+      <!-- movies-->
+      <div class="announcement_title">movies</div>
+      <div class="announcement_container_grid">
+        <div class="announcement_container_grid_item0">View all...</div>
+        <div class="announcement_container_grid_item2">
+          <div class="announcement_container">
+            <div class="announcement_container_item">
+              <a href="#">
+                <img
+                  src="./assets/img/BookListing-jaws.png"
+                  alt="Movie: JAWS"
+                />
+              </a>
+              <button class="announcement_container_item_reserve">
+                Reserve Movie
+              </button>
+              <p>
+                Qty: 7
+                <button
+                  class="announcement_container_item_available announcement_container_item_available_yes"
+                >
+                  Available
+                </button>
+              </p>
+            </div>
+
+            <div class="announcement_container_item">
+              <a href="#">
+                <img
+                  src="./assets/img/BookListing-TheShinning.png"
+                  alt="Movie: The Shinning"
+                />
+              </a>
+              <button class="announcement_container_item_reserve">
+                Reserve Movie
+              </button>
+              <p>
+                Qty: 7
+                <button
+                  class="announcement_container_item_available announcement_container_item_available_yes"
+                >
+                  Available
+                </button>
+              </p>
+            </div>
+
+            <div class="announcement_container_item">
+              <a href="#">
+                <img
+                  src="./assets/img/BookListing-Elvis.png"
+                  alt="Movie: Elvis"
+                />
+              </a>
+              <button class="announcement_container_item_reserve">
+                Reserve Movie
+              </button>
+              <p>
+                Qty: 7
+                <button
+                  class="announcement_container_item_available announcement_container_item_available_no"
+                >
+                  Available
+                </button>
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="announcement_container_grid_item3">
+          <a href="#"><i class="fa-solid fa-caret-right"></i></a>
+        </div>
+
+        <div class="announcement_container_grid_item1">
+          <a href="#"><i class="fa-solid fa-caret-left"></i></a>
+        </div>
+      </div>
+      <hr class="announcement_container_hr" />
+      <!-- New Arrivals -->
+      <div class="announcement_title">New Arrivals</div>
+      <div class="announcement_container_grid">
+        <div class="announcement_container_grid_item0">View all...</div>
+        <div class="announcement_container_grid_item2">
+          <div class="announcement_container">
+            <div class="announcement_container_item">
+              <a href="#">
+                <img
+                  src="./assets/img/BookListing-fractalNoise.png"
+                  alt="Cover to the book Fractal Noise"
+                />
+              </a>
+              <button class="announcement_container_item_reserve">
+                Reserve Book
+              </button>
+              <p>
+                Qty: 7
+                <button
+                  class="announcement_container_item_available announcement_container_item_available_yes"
+                >
+                  Available
+                </button>
+              </p>
+            </div>
+
+            <div class="announcement_container_item">
+              <a href="#">
+                <img
+                  src="./assets/img/BookListing-WelcomeToTheJungle.png"
+                  alt="cover to the book Welcome to the Jungle"
+                />
+              </a>
+              <button class="announcement_container_item_reserve">
+                Reserve Book
+              </button>
+              <p>
+                Qty: 7
+                <button
+                  class="announcement_container_item_available announcement_container_item_available_yes"
+                >
+                  Available
+                </button>
+              </p>
+            </div>
+
+            <div class="announcement_container_item">
+              <a href="#">
+                <img
+                  src="./assets/img/BookListing-HappyPlace.png"
+                  alt="cover to the book Happy Place"
+                />
+              </a>
+              <button class="announcement_container_item_reserve">
+                Reserve Book
+              </button>
+              <p>
+                Qty: 7
+                <button
+                  class="announcement_container_item_available announcement_container_item_available_yes"
+                >
+                  Available
+                </button>
+              </p>
+            </div>
+
+            <div class="announcement_container_item">
+              <a href="#">
+                <img
+                  src="./assets/img/BookListing-WorldAlmanac.png"
+                  alt="cover to the book The World Almanac and book of facts"
+                />
+              </a>
+              <button class="announcement_container_item_reserve">
+                Reserve Book
+              </button>
+              <p>
+                Qty: 7
+                <button
+                  class="announcement_container_item_available announcement_container_item_available_yes"
+                >
+                  Available
+                </button>
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="announcement_container_grid_item3">
+          <a href="#"><i class="fa-solid fa-caret-right"></i></a>
+        </div>
+
+        <div class="announcement_container_grid_item1">
+          <a href="#"><i class="fa-solid fa-caret-left"></i></a>
+        </div>
+      </div>
+      <hr class="announcement_container_hr" />
+
+      <!--- Additional Resources -->
+      <div class="announcement_title">Additional Resources</div>
+      <div class="booklisting_additional_resources_container">
+        <a href="#">Voter registration</a>
+        <a href="#">ged classes</a>
+        <a href="#">esl classes</a>
+        <a href="#">senior citizens</a>
+      </div>
+    </main>
+    <footer-component></footer-component>
+  </body>
+</html>

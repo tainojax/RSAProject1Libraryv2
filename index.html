@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <script src="./components/main.js" type="text/javascript" defer></script>
+    <link rel="stylesheet" href="./assets/css/styles.css" />
+
+    <script
+      src="https://kit.fontawesome.com/1652b9392a.js"
+      crossorigin="anonymous"
+    ></script>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@300&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@800&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <header-component></header-component>
+    <main class="container">
+      <!-- main image overlay-->
+      <div class="main_banner_image">
+        <div class="video_player_viewer">
+          <video
+            id="myVideo"
+            data-video-player--video-player-target="video"
+            data-action="click->video-player--video-player#togglePlay timeupdate->video-player--video-player#progressUpdate loadedmetadata->video-player--video-player#setVideoDuration"
+            poster="https://mixkit.imgix.net/videos/preview/mixkit-father-and-son-reading-a-book-together-4542-0.jpg?q=80&amp;auto=format%2Ccompress"
+            src="https://assets.mixkit.co/videos/preview/mixkit-father-and-son-reading-a-book-together-4542-large.mp4"
+            controlslist="nodownload"
+            disablepictureinpicture=""
+            autoplay=""
+            loop=""
+            muted=""
+          >
+            Your browser does not support the video tag.
+          </video>
+        </div>
+
+        <div class="main_banner_image_overlay">
+          <div class="main_banner_image_overlay_text1">
+            LIBRARY TESTED MOTHER APPROVED
+          </div>
+          <div class="main_banner_image_overlay_text2">
+            Reserve Tickets Today to See: Crazy Newton
+          </div>
+          <div class="main_banner_image_overlay_text3">
+            <button class="button_basics reserve_button red_button">
+              RESERVE TODAY
+            </button>
+          </div>
+        </div>
+      </div>
+
+      <!-- Main Title -->
+      <div class="main_title">Welcome TO CRAZY TOWN LIBRARY</div>
+
+      <div class="grid-main-container">
+        <div class="grid_items grid_item1">
+          Lorem ipsum dolor sit amet consectetur. Massa lorem proin hac quis
+          morbi vestibulum. Vel gravida viverra erat nam. Integer arcu porta
+          proin ac cras elit natoque eros. Enim diam facilisi eu tempor. Quis
+          sit pellentesque a viverra. Erat fermentum fusce at id eleifend
+          eleifend. Volutpat est sed nunc adipiscing. Velit volutpat tincidunt
+          tristique sed scelerisque at enim arcu.
+        </div>
+        <div class="grid_items grid_item2">
+          Lorem ipsum dolor sit amet consectetur. Massa lorem proin hac quis
+          morbi vestibulum. Vel gravida viverra erat nam. Integer arcu porta
+          proin ac cras elit natoque eros. Enim diam facilisi eu tempor. Quis
+          sit pellentesque a viverra. Erat fermentum fusce at id eleifend
+          eleifend. Volutpat est sed nunc adipiscing. Velit volutpat tincidunt
+          tristique sed scelerisque at enim arcu.
+        </div>
+      </div>
+
+      <!-- news items-->
+      <div class="grid-news-container">
+        <div class="grid_news_item1">
+          <img src="./assets/img/kids-page-1.png" alt="" srcset="" />
+
+          <div class="grid_news_item1_overlay">
+            <div class="grid_news_item1_overlay_title">Kids Lorem</div>
+            <div class="grid_news_item1_overlay_text">
+              Lorem Lorem ipsum dolor sit amet consectetur. Cursus leo dui id
+              pretium sed eget leo mauris sed. Adipiscing habitant tellus neque
+              faucibus tellus consequat eu scelerisque. Eget in diam eget ornare
+              tristique.
+            </div>
+          </div>
+          <div class="grid_news_more">
+            <a href="#" class="grid_news_bullet">
+              <i class="fa-solid fa-circle"></i
+            ></a>
+            <a href="#" class="grid_news_bullet">
+              <i class="fa-solid fa-circle"></i
+            ></a>
+            <a href="#" class="grid_news_bullet">
+              <i class="fa-solid fa-circle"></i
+            ></a>
+            <a href="#" class="grid_news_bullet">
+              <i class="fa-solid fa-circle"></i
+            ></a>
+            <a href="#" class="grid_news_bullet">
+              <i class="fa-solid fa-circle"></i
+            ></a>
+          </div>
+        </div>
+        <div class="grid_news_item2">
+          <div class="grid_news_main_title">EVENTS</div>
+          <div class="grid_news_article_title">lorem</div>
+          <div class="grid_news_article_data">
+            Lorem ipsum dolor sit amet consectetur. Hendrerit lectus eu commodo
+            cursus. Ipsum diam vitae sed nibh et sed non. Etiam amet fames quis
+            id non.
+          </div>
+          <hr />
+          <div class="grid_news_article_title">lorem</div>
+          <div class="grid_news_article_data">
+            Lorem ipsum dolor sit amet consectetur. Hendrerit lectus eu commodo
+            cursus. Ipsum diam vitae sed nibh et sed non. Etiam amet fames quis
+            id non.
+          </div>
+        </div>
+      </div>
+
+      <!-- Cards and Books -->
+      <div class="cards_books_container">
+        <a href="#" class="button_basics button_cards_books">library card</a>
+        <a href="#" class="button_basics button_cards_books">K - 8 BOOKS</a>
+        <a href="#" class="button_basics button_cards_books">9 - 12 BOOKS</a>
+        <a href="#" class="button_basics button_cards_books">adult books</a>
+      </div>
+
+      <div class="cards_books_container2">
+        <a
+          href="./booklisting.html"
+          class="button_basics red_button reserve_button"
+          >search</a
+        >
+        <a href="#" class="button_basics red_button reserve_button"
+          >book club</a
+        >
+      </div>
+
+      <!-- STREAMS & DOWNLOADS -->
+      <div class="streams_title">STREAMS & DOWNLOADS</div>
+      <div class="stream_container">
+        <img src="./assets/img/stream1.png" />
+        <img src="./assets/img/stream2.png" />
+        <img src="./assets/img/stream3.png" />
+        <img src="./assets/img/stream4.png" />
+      </div>
+    </main>
+    <footer-component></footer-component>
+  </body>
+</html>
