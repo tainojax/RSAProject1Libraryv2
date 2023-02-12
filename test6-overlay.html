@@ -1,0 +1,47 @@
+<!--- https://www.youtube.com/watch?v=RIDA6elhmBU --->
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      .low-opacity-bg-image {
+        --bg-image: url("./assets/img/kids-page-1.png");
+        --bg-image-opacity: 0.45;
+        display: grid;
+        place-content: center;
+        text-align: center;
+        max-height: 574px;
+        min-height: 574px;
+        max-width: 1440px;
+        overflow: hidden;
+        position: relative;
+        isolation: isolate;
+        top: 100px;
+      }
+      .low-opacity-bg-image::after {
+        content: "";
+        position: absolute;
+        z-index: -1;
+        inset: 0;
+        background: red;
+        opacity: var(--bg-image-opacity);
+        background-image: var(--bg-image);
+        background-size: cover;
+        background-position: center;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="low-opacity-bg-image">
+      <h1>LIBRARY TESTED MOTHER APPROVED</h1>
+      <h2>Reserve Tickets Today to See: Crazy Newton</h2>
+      <h3>RESERVE TODAY</h3>
+    </div>
+
+    <div class="main_title">Welcome TO CRAZY TOWN LIBRARY</div>
+  </body>
+</html>

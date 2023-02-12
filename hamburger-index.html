@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      /*@import url(https://fonts.googleapis.com/css?family=Raleway); */
+
+      @font-face {
+        font-family: "Montserrat";
+        font-style: normal;
+        font-weight: 300;
+        font-display: swap;
+        src: url(https://fonts.gstatic.com/s/montserrat/v25/JTUHjIg1_i6t8kCHKm4532VJOt5-QNFgpCs16Ew-.ttf)
+          format("truetype");
+      }
+
+      @font-face {
+        font-family: "Inter";
+        font-style: normal;
+        font-weight: 400;
+        font-display: swap;
+        src: url(https://fonts.gstatic.com/s/inter/v12/UcCO3FwrK3iLTeHuS_fvQtMwCp50KnMw2boKoduKmMEVuLyfMZg.ttf)
+          format("truetype");
+      }
+
+      h2 {
+        vertical-align: center;
+        text-align: center;
+      }
+
+      html,
+      body {
+        margin: 0;
+        height: 100%;
+      }
+
+      * {
+        font-family: "Raleway";
+        box-sizing: border-box;
+      }
+
+      .top-nav {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-between;
+        background-color: #457b9d;
+        /* background: linear-gradient(to left, #f46b45, #eea849); */
+        /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+        color: #fff;
+        height: 68px;
+        padding: 1em;
+      }
+
+      .menu {
+        display: flex;
+        flex-direction: row;
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+      }
+
+      .menu > li {
+        margin: 0 1rem;
+        overflow: hidden;
+      }
+
+      .menu-button-container {
+        display: none;
+        height: 100%;
+        width: 30px;
+        cursor: pointer;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+      }
+
+      #menu-toggle {
+        display: none;
+      }
+
+      .menu-button,
+      .menu-button::before,
+      .menu-button::after {
+        display: block;
+        background-color: #fff;
+        position: absolute;
+        height: 4px;
+        width: 30px;
+        transition: transform 400ms cubic-bezier(0.23, 1, 0.32, 1);
+        border-radius: 2px;
+      }
+
+      .menu-button::before {
+        content: "";
+        margin-top: -8px;
+      }
+
+      .menu-button::after {
+        content: "";
+        margin-top: 8px;
+      }
+
+      #menu-toggle:checked + .menu-button-container .menu-button::before {
+        margin-top: 0px;
+        transform: rotate(405deg);
+      }
+
+      #menu-toggle:checked + .menu-button-container .menu-button {
+        background: rgba(255, 255, 255, 0);
+      }
+
+      #menu-toggle:checked + .menu-button-container .menu-button::after {
+        margin-top: 0px;
+        transform: rotate(-405deg);
+      }
+
+      .navbar_logo img {
+        position: relative;
+        width: 128px;
+        height: 58px;
+        left: 35px;
+        top: 1px;
+      }
+
+      .button_basics {
+        box-shadow: 2px 2px 5px #333;
+        border-radius: 25px;
+        align-items: center;
+        text-align: center;
+        border: 0px;
+      }
+
+      .red_button {
+        background-color: #e63946;
+        text-transform: uppercase;
+        color: #faf9f9;
+        font-family: "Inter";
+        font-style: normal;
+      }
+
+      .register_button {
+        margin-right: 20px;
+        width: 175px;
+        height: 35px;
+        font-weight: 600;
+        font-size: 20px;
+        line-height: 24px;
+      }
+
+      .search-container {
+        position: relative;
+        margin-right: 25px;
+      }
+
+      .svg-search {
+        width: 20px;
+        height: 20px;
+        fill: grey;
+      }
+
+      .svg-search-container {
+        position: relative;
+        left: 6px;
+        top: 20px;
+        width: 20px;
+        z-index: 1000;
+      }
+
+      @media (max-width: 600px) {
+        .menu-button-container {
+          display: flex;
+        }
+        .menu {
+          position: absolute;
+          top: 0;
+          margin-top: 68px;
+          left: 0;
+          flex-direction: column;
+          width: 100%;
+          justify-content: center;
+          align-items: center;
+        }
+        #menu-toggle ~ .menu li {
+          height: 0;
+          margin: 0;
+          padding: 0;
+          border: 0;
+          transition: height 400ms cubic-bezier(0.23, 1, 0.32, 1);
+        }
+        #menu-toggle:checked ~ .menu li {
+          border: 1px solid #333;
+          height: 2.5em;
+          padding: 0.5em;
+          transition: height 400ms cubic-bezier(0.23, 1, 0.32, 1);
+        }
+        .menu > li {
+          display: flex;
+          justify-content: center;
+          margin: 0;
+          padding: 0.5em 0;
+          width: 100%;
+          color: white;
+          background-color: #222;
+        }
+        .menu > li:not(:last-child) {
+          border-bottom: 1px solid #444;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <!--
+        https://alvarotrigo.com/blog/hamburger-menu-css/
+        https://codepen.io/alvarotrigo/pen/MWEJEWG 
+    -->
+    <section class="top-nav">
+      <div class="navbar_logo">
+        <img
+          src="./assets/img/CTL_LOGO_UPDATED.png"
+          alt="Crazy Town Library Logo"
+        />
+      </div>
+      <input id="menu-toggle" type="checkbox" />
+      <label class="menu-button-container" for="menu-toggle">
+        <div class="menu-button"></div>
+      </label>
+      <ul class="menu">
+        <li><a href="./about.html">ABOUT</a></li>
+        <li><a href="./account.html">ACCOUNT</a></li>
+        <li><a href="#">LOCATION</a></li>
+        <li><a href="#">EVENTS</a></li>
+      </ul>
+    </section>
+
+    <h2>Resize window to collapse menu</h2>
+  </body>
+</html>

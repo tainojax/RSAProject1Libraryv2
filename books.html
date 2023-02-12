@@ -4,6 +4,7 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="./assets/components/headerfooter.js" defer></script>
     <link rel="stylesheet" href="./assets/css/styles.css" />
 
     <script
@@ -13,47 +14,8 @@
     <title>Crazy Town Library (CTL) - Books</title>
   </head>
   <body>
-    <div class="container">
-      <!-- main header and menu -->
-      <div class="navbar">
-        <div class="navbar_logo">
-          <img
-            src="./assets/img/CTL_LOGO_UPDATED.png"
-            alt="Crazy Town Library Logo"
-          />
-        </div>
-        <div class="navbar_menu">
-          <a href="./index.html">HOME</a>
-          <a href="#">SIGN IN</a>
-          <button class="button_basics register_button red_button">
-            <a href="./registration.html"> REGISTER</a>
-          </button>
-          <div class="search-container">
-            <!--   https://www.geeksforgeeks.org/how-to-place-font-awesome-icon-to-input-field/?ref=lbp         -->
-            <i class="fa fa-search icon"></i>
-            <input class="input-field" type="text" />
-          </div>
-        </div>
-      </div>
-
-      <!-- secondary menu -->
-      <div class="navbar_secondary">
-        <div class="navbar_secondary_menu">
-          <a href="./about.html">ABOUT</a>
-          <a href="./account.html">ACCOUNT</a>
-          <!-- https://fontawesome.com/icons/caret-down?s=solid&f=classic -->
-          <a href="./location.html">
-            LOCATION
-            <i class="fa-solid fa-caret-down"></i>
-          </a>
-
-          <a href="./events.html"
-            >EVENTS
-            <i class="fa-solid fa-caret-down"></i>
-          </a>
-        </div>
-      </div>
-
+    <header-component></header-component>
+    <main class="container">
       <!-- search -->
       <div class="booklisting_search_container">
         <!--   https://www.geeksforgeeks.org/how-to-place-font-awesome-icon-to-input-field/?ref=lbp         -->
@@ -360,12 +322,8 @@
           <a href="#"><i class="fa-solid fa-angle-right"></i></a>
         </div>
       </div>
-      <!-- footer section-->
-      <div class="nav_footer">
-        COPYRIGHT © 2023 CRAZY TOWN LIBRARY. ALL RIGHTS RESERVED
-      </div>
-
       <!-- END OF CONTAINER -->
-    </div>
+    </main>
+    <footer-component></footer-component>
   </body>
 </html>

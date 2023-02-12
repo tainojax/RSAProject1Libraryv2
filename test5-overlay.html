@@ -1,0 +1,63 @@
+<!---https://www.youtube.com/watch?v=RIDA6elhmBU --->
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      .hero {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        background: rgba(0, 0, 0, 0.45);
+        color: white;
+        margin-bottom: 100px;
+        position: relative;
+        overflow: hidden;
+        min-height: 100px;
+        max-height: 574px;
+      }
+      .video-bg {
+        position: absolute;
+        top: 0;
+        left: 0;
+        height: auto;
+        min-width: 100%;
+        min-height: 100%;
+        z-index: -1;
+      }
+
+      #myVideo {
+        width: 100%;
+        height: auto;
+        max-width: 1440px;
+        max-height: 574px;
+        object-fit: scale-down;
+        transform: scale(1.5);
+      }
+    </style>
+  </head>
+  <body>
+    <div class="hero">
+      <h1>Some Text here</h1>
+      <div class="video-bg">
+        <video
+          id="myVideo"
+          data-video-player--video-player-target="video"
+          data-action="click->video-player--video-player#togglePlay timeupdate->video-player--video-player#progressUpdate loadedmetadata->video-player--video-player#setVideoDuration"
+          poster="https://mixkit.imgix.net/videos/preview/mixkit-father-and-son-reading-a-book-together-4542-0.jpg?q=80&amp;auto=format%2Ccompress"
+          src="https://assets.mixkit.co/videos/preview/mixkit-father-and-son-reading-a-book-together-4542-large.mp4"
+          autoplay=""
+          loop=""
+          muted=""
+        >
+          Your browser does not support the video tag.
+        </video>
+      </div>
+    </div>
+  </body>
+</html>

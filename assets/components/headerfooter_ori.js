@@ -23,12 +23,13 @@ class Header extends HTMLElement {
     
     <style type="text/css">
 
+
     body {
       margin: 0px 0px 0px 0px;
     }
 
     .container {
-      width: 1440px;
+      /* width: 1440px; */
       overflow: hidden;
       margin: 0 auto;
     }
@@ -94,14 +95,25 @@ class Header extends HTMLElement {
       margin-right: 25px;
     }
 
-    .search-container i {
+    .svg-search {
+       width:20px;
+       height:20px;
+       fill:grey;
+      }
+
+    .svg-search-container {
       position: relative;
-      left: 30px;
-      top: 2px;
-      font-size: 20px;
-      color: gray;
+      left: 6px;
+      top: 20px;
+      width: 20px;
+      z-index: 1000;
     }
+
+
+
     .search-container input {
+      position: relative;
+      top: -10px;
       width: 152px;
       height: 28px;
       padding: 2px;
@@ -127,15 +139,10 @@ class Header extends HTMLElement {
       display: flex;
       align-items: center;
       vertical-align: center;
-    }
-
-    .navbar_secondary_menu a {
       margin-top: 3px;
-      top: 24px;
       height: 24px;
       margin-right: 15px;
       padding: 0;
-      text-decoration: none;
       font-family: "Inter";
       font-style: normal;
       font-weight: 400;
@@ -144,8 +151,21 @@ class Header extends HTMLElement {
       color: black;
     }
 
+    .navbar_secondary_menu a {
+      text-decoration: none;
+    }
 
+    .svg-down-arrow {  
+      position: relative;
+      top:4px;
+      left: -10px;
+      width:20px;
+      height:20px;
+      fill:black;
+      z-index: 1000;
+    }
     </style>
+    
     
     
     <div class="container">
@@ -165,8 +185,9 @@ class Header extends HTMLElement {
           <a href="./registration.html"> REGISTER</a>
         </button>
         <div class="search-container">
-          <!--   https://www.geeksforgeeks.org/how-to-place-font-awesome-icon-to-input-field/?ref=lbp         -->
-          <i class="fa fa-search icon"></i>
+          <div class="svg-search-container">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" class="svg-search"><!--! Font Awesome Pro 6.2.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2022 Fonticons, Inc. --><path d="M416 208c0 45.9-14.9 88.3-40 122.7L502.6 457.4c12.5 12.5 12.5 32.8 0 45.3s-32.8 12.5-45.3 0L330.7 376c-34.4 25.2-76.8 40-122.7 40C93.1 416 0 322.9 0 208S93.1 0 208 0S416 93.1 416 208zM208 352c79.5 0 144-64.5 144-144s-64.5-144-144-144S64 128.5 64 208s64.5 144 144 144z"/></svg>
+          </div>
           <input class="input-field" type="text" />
         </div>
       </nav>
@@ -177,16 +198,22 @@ class Header extends HTMLElement {
       <nav class="navbar_secondary_menu">
         <a href="./about.html">ABOUT</a>
         <a href="./account.html">ACCOUNT</a>
-        <!-- https://fontawesome.com/icons/caret-down?s=solid&f=classic -->
-        <a href="./location.html">
-          LOCATION
-          <i class="fa-solid fa-caret-down"></i>
+        <a href="#">LOCATION</a>
+        <a href="#">
+          <svg class="svg-down-arrow" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512">
+          <!--! Font Awesome Pro 6.2.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2022 Fonticons, Inc. -->
+            <path d="M137.4 374.6c12.5 12.5 32.8 12.5 45.3 0l128-128c9.2-9.2 11.9-22.9 6.9-34.9s-16.6-19.8-29.6-19.8L32 192c-12.9 0-24.6 7.8-29.6 19.8s-2.2 25.7 6.9 34.9l128 128z"/>
+          </svg>
         </a>
 
-        <a href="./events.html"
-          >EVENTS
-          <i class="fa-solid fa-caret-down"></i>
-        </a>
+        <a href="#">EVENTS</a>
+          <a href="#">
+            <svg class="svg-down-arrow" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512">
+            <!--! Font Awesome Pro 6.2.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2022 Fonticons, Inc. -->
+              <path d="M137.4 374.6c12.5 12.5 32.8 12.5 45.3 0l128-128c9.2-9.2 11.9-22.9 6.9-34.9s-16.6-19.8-29.6-19.8L32 192c-12.9 0-24.6 7.8-29.6 19.8s-2.2 25.7 6.9 34.9l128 128z"/>
+            </svg>
+          </a>
+
       </nav>
     </div>
     `
@@ -207,7 +234,7 @@ connectedCallback() {
   <style type="text/css">
 
   .nav_footer {
-    width: 1440px;
+    /* width: 1440px; */
     overflow: hidden;
     margin: 0 auto;
     margin-top: 50px;

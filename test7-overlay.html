@@ -1,0 +1,72 @@
+<!---https://www.youtube.com/watch?v=RIDA6elhmBU --->
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      /* https://www.youtube.com/watch?v=RIDA6elhmBU */
+      .low-opacity-bg-video {
+        display: grid;
+        place-content: center;
+        text-align: center;
+        overflow: hidden;
+        position: relative;
+        isolation: isolate;
+        width: 100%;
+        height: 100vh;
+      }
+
+      .low-opacity-bg-video::after {
+        content: "";
+        position: absolute;
+        z-index: -1;
+        inset: 0;
+        background: black;
+        opacity: 0.45;
+        width: 100%;
+        height: 100%;
+        top: 0;
+        left: 0;
+      }
+
+      .low-opacity-bg-video video {
+        position: absolute;
+        z-index: -2;
+        width: 100vw;
+        height: 100vh;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        object-fit: cover;
+        opacity: 0.45;
+      }
+
+      .low-opacity-bg-video h1,
+      .low-opacity-bg-video h2,
+      .low-opacity-bg-video h3 {
+        color: white;
+        font-size: 5vw;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="low-opacity-bg-video">
+      <h1>LIBRARY TESTED MOTHER APPROVED</h1>
+      <h2>Reserve Tickets Today to See: Crazy Newton</h2>
+      <h3>RESERVE TODAY</h3>
+      <video autoplay muted loop>
+        <source
+          src="https://assets.mixkit.co/videos/preview/mixkit-father-and-son-reading-a-book-together-4542-large.mp4"
+          type="video/mp4"
+        />
+        Your browser does not support the video tag.
+      </video>
+    </div>
+
+    <div class="main_title">Welcome TO CRAZY TOWN LIBRARY</div>
+  </body>
+</html>

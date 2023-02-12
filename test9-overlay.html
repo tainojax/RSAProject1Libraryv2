@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      .news {
+        width: 50vw;
+        height: 50vh;
+        max-height: 100px;
+      }
+      .news .low-opacity-bg-image {
+        background-image: url("./assets/img/kids-page-1.png");
+        background-size: cover;
+        background-position: center;
+        height: 100vh;
+        width: auto;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        position: relative;
+      }
+
+      .news .low-opacity-bg-image .overlay {
+        color: white;
+        text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+        z-index: 1;
+        position: absolute;
+        bottom: 5%;
+        padding: 1.5rem;
+        background-color: #e63946;
+        width: 80%;
+      }
+
+      .news .low-opacity-bg-image .bullets {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: flex-start;
+        padding-left: 10%;
+        position: absolute;
+        bottom: 0;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="news">
+      <div class="low-opacity-bg-image">
+        <div class="overlay">
+          <h1>Kids Lorem</h1>
+          <h2>
+            Lorem Lorem ipsum dolor sit amet consectetur. Cursus leo dui id
+            pretium sed eget leo mauris sed. Adipiscing habitant tellus neque
+            faucibus tellus consequat eu scelerisque. Eget in diam eget ornare
+            tristique.
+          </h2>
+        </div>
+        <div class="bullets">
+          <i class="fa-solid fa-circle"></i>
+          <i class="fa-solid fa-circle"></i>
+          <i class="fa-solid fa-circle"></i>
+          <i class="fa-solid fa-circle"></i>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

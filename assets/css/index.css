@@ -1,0 +1,252 @@
+@font-face {
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 300;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/inter/v12/UcCO3FwrK3iLTeHuS_fvQtMwCp50KnMw2boKoduKmMEVuLyfMZg.ttf)
+    format("truetype");
+}
+@font-face {
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 700;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/inter/v12/UcCO3FwrK3iLTeHuS_fvQtMwCp50KnMw2boKoduKmMEVuFuYMZg.ttf)
+    format("truetype");
+}
+@font-face {
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 300;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/montserrat/v25/JTUHjIg1_i6t8kCHKm4532VJOt5-QNFgpCs16Ew-.ttf)
+    format("truetype");
+}
+@font-face {
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 500;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/montserrat/v25/JTUHjIg1_i6t8kCHKm4532VJOt5-QNFgpCtZ6Ew-.ttf)
+    format("truetype");
+}
+@font-face {
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 800;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/montserrat/v25/JTUHjIg1_i6t8kCHKm4532VJOt5-QNFgpCvr70w-.ttf)
+    format("truetype");
+}
+@font-face {
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 700;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/montserrat/v25/JTUHjIg1_i6t8kCHKm4532VJOt5-QNFgpCuM70w-.ttf)
+    format("truetype");
+}
+
+/* https://www.youtube.com/watch?v=RIDA6elhmBU */
+.low-opacity-bg-video {
+  display: grid;
+  place-content: center;
+  text-align: center;
+  overflow: hidden;
+  position: relative;
+  isolation: isolate;
+  width: 100%;
+  height: 100vh;
+  max-height: 574px;
+}
+
+.low-opacity-bg-video::after {
+  content: "";
+  position: absolute;
+  z-index: -1;
+  inset: 0;
+  background: black;
+  opacity: 0.45;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+}
+
+.low-opacity-bg-video video {
+  position: absolute;
+  z-index: -2;
+  width: 100vw;
+  height: 100vh;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  object-fit: cover;
+  opacity: 1;
+}
+
+.low-opacity-bg-video h1 {
+  font-weight: 800;
+  color: white;
+  font-size: 5vw;
+}
+
+.low-opacity-bg-video h2 {
+  font-weight: 500;
+  color: white;
+  font-size: 4vw;
+}
+
+.low-opacity-bg-video button {
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 4vw;
+  background-color: #e63946;
+  text-transform: uppercase;
+  color: #faf9f9;
+  box-shadow: 2px 2px 5px #333;
+  border-radius: 25px;
+  border: 0px;
+  width: 45vw;
+  padding: 1vh;
+  margin-left: 4vw;
+}
+
+.grid-main-container {
+  display: flex;
+  flex-direction: column;
+  flex: wrap;
+}
+
+.grid-main-container .column {
+  font-weight: 300;
+  letter-spacing: 0.015em;
+  color: #121212;
+  padding-left: 3vw;
+  padding-right: 3vw;
+  padding-top: 1vh;
+  padding-bottom: 1vh;
+  text-align: left;
+  font-size: 3vw;
+}
+
+.news {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  overflow: hidden;
+  width: 100vw;
+}
+
+.news .low-opacity-bg-image {
+  display: grid;
+  place-content: center;
+  text-align: center;
+  overflow: hidden;
+  position: relative;
+  isolation: isolate;
+  width: 100%;
+  height: 30vh;
+}
+
+.news .low-opacity-bg-image::after {
+  content: "";
+  position: absolute;
+  z-index: -1;
+  inset: 0;
+  background: black;
+  opacity: 0.45;
+  width: 100vw;
+  height: 100vh;
+  top: 0;
+  left: 0;
+}
+
+.news .low-opacity-bg-image img {
+  position: absolute;
+  z-index: -2;
+  width: 100vw;
+  height: 100vh;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  object-fit: cover;
+
+  opacity: 1;
+}
+
+.news .low-opacity-bg-image .overlay {
+  color: white;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+  z-index: 1;
+  position: absolute;
+  bottom: 5%;
+  padding: 1.5rem;
+  background-color: #e63946;
+  width: 80%;
+}
+.news .low-opacity-bg-image .overlay h1 {
+  font-size: 3vw;
+}
+
+.news .low-opacity-bg-image .overlay h2 {
+  font-size: 2vw;
+}
+@media screen and (max-width: 699px) {
+  .container {
+    width: 100%;
+    margin: 0, auto;
+  }
+
+  .low-opacity-bg-video {
+    max-height: 300px;
+  }
+}
+
+@media screen and (min-width: 700px) {
+  .low-opacity-bg-video video {
+    height: 574px;
+  }
+  .low-opacity-bg-video h1 {
+    font-size: 48px;
+    line-height: 59px;
+  }
+
+  .low-opacity-bg-video h2 {
+    font-size: 32px;
+    line-height: 39px;
+  }
+
+  .low-opacity-bg-video button {
+    width: 446px;
+    height: 60px;
+    font-weight: 600;
+    font-size: 32px;
+    line-height: 39px;
+    padding: 10px;
+    margin-left: 25px;
+  }
+
+  .grid-main-container {
+    display: flex;
+    flex-direction: row;
+    flex: wrap;
+  }
+
+  .grid-main-container .column {
+    font-family: "Montserrat";
+    font-style: normal;
+    font-weight: 300;
+    font-size: 28px;
+    line-height: 34px;
+    letter-spacing: 0.015em;
+    color: #121212;
+    padding-bottom: 50px;
+  }
+}

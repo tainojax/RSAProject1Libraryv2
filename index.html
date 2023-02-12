@@ -2,56 +2,40 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-    <script src="./components/main.js" defer></script>
-    <link rel="stylesheet" href="./assets/css/styles.css" />
-    <script
-      src="https://kit.fontawesome.com/1652b9392a.js"
-      crossorigin="anonymous"
-    ></script>
-    <title>Crazy Town Library (CTL) - Index</title>
+    <link rel="stylesheet" href="./assets/css/index.css" />
+    <link rel="stylesheet" href="./assets/css/common.css" />
+    <script src="./assets/components/headerfooter.js" defer></script>
+    <title>Crazy Town Library (CTL)</title>
   </head>
   <body>
-    <header-component></header-component>
-    <main class="container">
-      <!-- main image overlay-->
-      <div class="main_banner_image">
-        <div class="video_player_viewer">
-          <video
-            id="myVideo"
-            data-video-player--video-player-target="video"
-            data-action="click->video-player--video-player#togglePlay timeupdate->video-player--video-player#progressUpdate loadedmetadata->video-player--video-player#setVideoDuration"
-            poster="https://mixkit.imgix.net/videos/preview/mixkit-father-and-son-reading-a-book-together-4542-0.jpg?q=80&amp;auto=format%2Ccompress"
-            src="https://assets.mixkit.co/videos/preview/mixkit-father-and-son-reading-a-book-together-4542-large.mp4"
-            autoplay=""
-            loop=""
-            muted=""
-          >
-            Your browser does not support the video tag.
-          </video>
-        </div>
+    <div class="container">
+      <header-component></header-component>
 
-        <div class="main_banner_image_overlay">
-          <div class="main_banner_image_overlay_text1">
-            LIBRARY TESTED MOTHER APPROVED
-          </div>
-          <div class="main_banner_image_overlay_text2">
-            Reserve Tickets Today to See: Crazy Newton
-          </div>
-          <div class="main_banner_image_overlay_text3">
-            <button class="button_basics reserve_button red_button">
-              RESERVE TODAY
-            </button>
-          </div>
-        </div>
+      <!-- main image overlay-->
+
+      <div class="low-opacity-bg-video">
+        <h1>LIBRARY TESTED <br />MOTHER APPROVED</h1>
+        <h2>
+          Reserve Tickets Today <br />
+          to See: Crazy Newton
+        </h2>
+        <button>RESERVE TODAY</button>
+        <video autoplay muted loop id="myVideo">
+          <source
+            src="https://assets.mixkit.co/videos/preview/mixkit-father-and-son-reading-a-book-together-4542-large.mp4"
+            type="video/mp4"
+          />
+          Your browser does not support the video tag.
+        </video>
       </div>
 
       <!-- Main Title -->
       <div class="main_title">Welcome TO CRAZY TOWN LIBRARY</div>
 
       <div class="grid-main-container">
-        <div class="grid_items grid_item1">
+        <div class="column">
           Lorem ipsum dolor sit amet consectetur. Massa lorem proin hac quis
           morbi vestibulum. Vel gravida viverra erat nam. Integer arcu porta
           proin ac cras elit natoque eros. Enim diam facilisi eu tempor. Quis
@@ -59,7 +43,7 @@
           eleifend. Volutpat est sed nunc adipiscing. Velit volutpat tincidunt
           tristique sed scelerisque at enim arcu.
         </div>
-        <div class="grid_items grid_item2">
+        <div class="column">
           Lorem ipsum dolor sit amet consectetur. Massa lorem proin hac quis
           morbi vestibulum. Vel gravida viverra erat nam. Integer arcu porta
           proin ac cras elit natoque eros. Enim diam facilisi eu tempor. Quis
@@ -70,51 +54,23 @@
       </div>
 
       <!-- news items-->
-      <div class="grid-news-container">
-        <div class="grid_news_item1">
-          <img src="./assets/img/kids-page-1.png" alt="kids page" />
-
-          <div class="grid_news_item1_overlay">
-            <div class="grid_news_item1_overlay_title">Kids Lorem</div>
-            <div class="grid_news_item1_overlay_text">
+      <div class="news">
+        <div class="low-opacity-bg-image">
+          <img src="./assets/img/kids-page-1.png" alt="kids eating a meal" />
+          <div class="overlay">
+            <h1>Kids Lorem</h1>
+            <h2>
               Lorem Lorem ipsum dolor sit amet consectetur. Cursus leo dui id
               pretium sed eget leo mauris sed. Adipiscing habitant tellus neque
               faucibus tellus consequat eu scelerisque. Eget in diam eget ornare
               tristique.
-            </div>
+            </h2>
           </div>
-          <div class="grid_news_more">
-            <a href="#" class="grid_news_bullet">
-              <i class="fa-solid fa-circle"></i
-            ></a>
-            <a href="#" class="grid_news_bullet">
-              <i class="fa-solid fa-circle"></i
-            ></a>
-            <a href="#" class="grid_news_bullet">
-              <i class="fa-solid fa-circle"></i
-            ></a>
-            <a href="#" class="grid_news_bullet">
-              <i class="fa-solid fa-circle"></i
-            ></a>
-            <a href="#" class="grid_news_bullet">
-              <i class="fa-solid fa-circle"></i
-            ></a>
-          </div>
-        </div>
-        <div class="grid_news_item2">
-          <div class="grid_news_main_title">EVENTS</div>
-          <div class="grid_news_article_title">lorem</div>
-          <div class="grid_news_article_data">
-            Lorem ipsum dolor sit amet consectetur. Hendrerit lectus eu commodo
-            cursus. Ipsum diam vitae sed nibh et sed non. Etiam amet fames quis
-            id non.
-          </div>
-          <hr />
-          <div class="grid_news_article_title">lorem</div>
-          <div class="grid_news_article_data">
-            Lorem ipsum dolor sit amet consectetur. Hendrerit lectus eu commodo
-            cursus. Ipsum diam vitae sed nibh et sed non. Etiam amet fames quis
-            id non.
+          <div class="bullets">
+            <i class="fa-solid fa-circle"></i>
+            <i class="fa-solid fa-circle"></i>
+            <i class="fa-solid fa-circle"></i>
+            <i class="fa-solid fa-circle"></i>
           </div>
         </div>
       </div>
@@ -141,12 +97,17 @@
       <!-- STREAMS & DOWNLOADS -->
       <div class="streams_title">STREAMS & DOWNLOADS</div>
       <div class="stream_container">
-        <img src="./assets/img/stream1.png" alt="no description" />
-        <img src="./assets/img/stream2.png" alt="no description" />
-        <img src="./assets/img/stream3.png" alt="no description" />
-        <img src="./assets/img/stream4.png" alt="no description" />
+        <img src="./assets/img/stream1.png" />
+        <img src="./assets/img/stream2.png" />
+        <img src="./assets/img/stream3.png" />
+        <img src="./assets/img/stream4.png" />
       </div>
-    </main>
-    <footer-component></footer-component>
+
+      <div class="nav_footer">
+        COPYRIGHT © 2023 CRAZY TOWN LIBRARY. ALL RIGHTS RESERVED
+      </div>
+
+      <!-- END OF CONTAINER -->
+    </div>
   </body>
 </html>

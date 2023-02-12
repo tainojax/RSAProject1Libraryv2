@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <script
+      src="https://kit.fontawesome.com/1652b9392a.js"
+      crossorigin="anonymous"
+    ></script>
+
+    <style>
+      .booklisting_information_container {
+        position: relative;
+        display: grid;
+        grid-template-columns: 100px 300px 300px 150px 150px 200px;
+        grid-auto-flow: column;
+        /*
+        display: flex;
+        justify-content: space-evenly;
+        */
+        box-sizing: border-box;
+        width: 85%; /*1340px; */
+        height: 7rem;
+        padding: 5px;
+        padding-left: 80px;
+        margin-left: 50px;
+        margin-bottom: 36px;
+        background: #ffffff;
+        border: 1px solid #457b9d;
+        box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+        border-radius: 15px;
+      }
+
+      .booklisting_information_detail {
+        margin-top: 15px;
+        padding-left: 1px;
+      }
+
+      .booklisting_information_detail img {
+        width: 60px;
+        width: 60px;
+      }
+      .booklisting_information_container h1 {
+        font-family: "Montserrat";
+        font-style: normal;
+        text-transform: uppercase;
+        font-weight: 700;
+        font-size: 20px;
+        line-height: 10px;
+        color: #1a1a1a;
+        padding-top: 10px;
+      }
+
+      .booklisting_information_container h2 {
+        font-family: "Montserrat";
+        font-style: normal;
+        font-weight: 300;
+        font-size: 18px;
+        line-height: 22px;
+        line-height: 6px;
+        color: #1a1a1a;
+      }
+
+      .booklisting_information_container i {
+        font-size: 14px;
+        color: #ffac33;
+      }
+
+      .button_basics {
+        box-shadow: 2px 2px 5px #333; /* horizontal offset, vertical offset, blur radius, color */
+        border-radius: 25px;
+        align-items: center;
+        text-align: center;
+        border: 0px;
+      }
+
+      .red_button {
+        background-color: #e63946;
+        text-transform: uppercase;
+        color: #faf9f9;
+        font-family: "Inter";
+        font-style: normal;
+      }
+      .register_button {
+        margin-right: 20px;
+        width: 175px;
+        height: 35px;
+        font-weight: 600;
+        font-size: 20px;
+        line-height: 24px;
+      }
+
+      .booklisting_button {
+        margin-top: 35px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container booklisting_information_container">xx</div>
+
+    <div class="booklisting_information_container">
+      <div class="booklisting_information_detail">
+        <!--- <img src="./assets/img/BookListing-dontMakeMeTthink.png" alt="Cover of book" /> --->
+        <slot name="imageFileName"
+          ><img
+            src="./assets/img/BookListing-dontMakeMeTthink.png"
+            alt="Cover of book"
+        /></slot>
+      </div>
+
+      <div class="booklisting_information_detail">
+        <h1>Title:</h1>
+        <h2><slot name="title">Lorem ipsum</slot></h2>
+        <!--- <h2>Lorem ipsum dolor sit amet consectetur.</h2> --->
+      </div>
+      <div class="booklisting_information_detail">
+        <h1>authors:</h1>
+        <h2><slot name="authors">Lorem ipsum</slot></h2>
+        <!--- <h2>Lorem ipsum</h2> --->
+      </div>
+      <div class="booklisting_information_detail">
+        <h1>available:</h1>
+        <h2 class="align-right">QTY: <slot name="quantity">0</slot></h2>
+        <!--- <h2 class="align-right">QTY: 7</h2> --->
+      </div>
+      <div class="booklisting_information_detail">
+        <h1>ratings:</h1>
+        <h2 class="align-right">
+          <slot name="rating">0 <i class="fa-solid fa-star"></i></slot>
+          <i class="fa-solid fa-star"></i>
+        </h2>
+        <!--- <h2 class="align-right">4.8 <i class="fa-solid fa-star"></i></h2> --->
+      </div>
+      <div class="account_book_information_detail">
+        <button
+          class="button_basics red_button register_button booklisting_button"
+        >
+          checkout
+        </button>
+      </div>
+    </div>
+    `
+  </body>
+</html>
